@@ -1,0 +1,91 @@
+
+
+body {
+	font-family: 'courier new', courier, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	color: #555;	
+}
+h1 {
+	font-size: 36px;
+	line-height: 1.2;
+}
+h2 {
+	font-size: 21px;
+	line-height: 1.2;
+}
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+header {
+	background-color: #f8f8f8;
+}
+.navcontainer {
+	height: 54px;
+	width: 970px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.heading h2 {
+	display: inline-block;
+	padding-top: 16px;
+}
+.navbar {
+	display: inline-block;
+	float: right;
+	padding-top: 16px;
+}
+.navbar ul li {
+	display: inline;
+	padding: 19px 15px 12px 15px;
+}
+#top {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: url(../images/hero-bg-dark.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	padding-bottom: 100px;
+  	padding-top: 100px;
+}
+#top h1 {
+	color: #2ec371;
+	font-weight: 800;
+	padding-bottom: 10px;
+}
+#top h2 {
+	color: #cecece;
+	font-weight: 200;
+	padding-bottom: 10px;
+}
+.skinny {
+	font-weight: 100;
+	color: #fefefe;
+}
+.container {
+	width: 970px;
+	margin: 0 auto;
+}
+.container img {
+	float: left;
+	margin: 0 30px 20px 0;
+}
+.container p {
+	margin: 20px 0;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.container a {
+	color: #2ecc71;
+	text-decoration: none;
+}
+.container a:hover {
+	color: #2ecc71;
+}
