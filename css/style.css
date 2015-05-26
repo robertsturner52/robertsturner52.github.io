@@ -127,11 +127,11 @@ header h2 {
 	color: #2ecc71;
 }
 #bottom {
-	background-color: #f9f9f9;
+	background-color: #eee;
 	text-align: center;
 }
 #bottom h2 {
-	padding-top: 10px;
+	padding-top: 25px;
 	text-align: center;
 	font-size: 32px;
 	font-weight: 600;
@@ -141,7 +141,10 @@ header h2 {
 }
 .one-half {
 	width: 48%;
-	margin: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	padding: 30px 20px;
 	background-color: #fefefe;
 	display: inline-block;
@@ -182,7 +185,7 @@ footer p {
 	padding: 50px 0;
 	margin-bottom: 0;
 	text-align: center;
-	background-color: #f9f9f9;
+	background-color: #eee;
 
 }
 .explore {
@@ -213,21 +216,25 @@ footer p {
 }
 .explore li:nth-child(2) a {
 	background-color: #d9534f;
-	border-bottom: 3px solid #d43f3a;
+	border: 1px solid #d43f3a;
 }
 .explore li:nth-child(3) a {
 	background-color: #428bca;
-	border-bottom: 1px solid #357ebd#3498db;
+	border: 1px solid #357ebd;
 }
 .explore li:nth-child(4) a {
 	background-color: #f0ad4e;
-	border-bottom: 3px solid #eea236;
+	border: 1px solid #eea236;
 }
 .explore li:nth-child(1) a:hover {
+	background-color: #4cae4c;
 }
 .explore li:nth-child(2) a:hover {
+	background-color: #d43f3a;
 }
 .explore li:nth-child(3) a:hover {
+	background-color: #357ebd;
 }
 .explore li:nth-child(4) a:hover {
+	background-color: #eea236;
 }
