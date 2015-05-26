@@ -38,27 +38,27 @@ header h2 {
 	font-family: 'courier new', courier, sans-serif;
 	font-weight: 500;
 }
-.navcontainer {
+#navcontainer {
 	height: 54px;
 	width: 970px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
-.heading h2 {
+#navcontainer h2 {
 	display: inline-block;
 	padding-top: 16px;
+	margin-right: 100px;
 }
 .navbar {
-	display: inline-block;
-	float: right;
 	padding-top: 19px;
+	display: inline-block;
 }
 .navbar ul li {
 	display: inline;
 	padding: 19px 15px 12px 15px;
 }
 .navbar a {
-	padding: 19px 0 15px 0;
+	padding: 19px 0 12px 0;
 	text-decoration: none;
 }
 .navbar li:nth-child(1) a {
@@ -101,6 +101,28 @@ header h2 {
 	color: #cecece;
 	font-weight: 200;
 	padding-bottom: 10px;
+}
+#top fieldset {
+	width: 400px;
+	margin: 20px auto;
+}
+#top input[type="text"] {
+	padding: 10px;
+	width: 70%;
+	border-radius: 5px;
+	border: 2px solid #2ec371;
+	font-size: 20px;
+}
+#top input[type="text"]:focus {
+	outline: 0;
+	border: 2px solid red;
+}
+#top input[type="submit"] {
+	padding: 13px;
+	background-color: #2ec371;
+	border: 1px solid #2ec371;
+	border-radius: 5px;
+	font-size: 15px;
 }
 .skinny {
 	font-weight: 100;
@@ -237,4 +259,17 @@ footer p {
 }
 .explore li:nth-child(4) a:hover {
 	background-color: #eea236;
+}
+#tothetop {
+	color: #fff;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 43px;
+	width: 45px;
+	border-radius: 20px;
+	padding: 13px 8px;
+	margin: 10px;
+	background-color: #2ec371;
+	text-decoration: none;
 }
