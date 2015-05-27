@@ -103,13 +103,13 @@ header h2 {
 	padding-bottom: 10px;
 }
 #top fieldset {
+	position: relative;
 	width: 400px;
 	margin: 20px auto;
 }
 #top input[type="text"] {
 	padding: 10px;
 	width: 70%;
-	border-radius: 5px;
 	border: 2px solid #2ec371;
 	font-size: 20px;
 }
@@ -118,11 +118,15 @@ header h2 {
 	border: 2px solid red;
 }
 #top input[type="submit"] {
+	position: absolute;
 	padding: 13px;
 	background-color: #2ec371;
 	border: 1px solid #2ec371;
-	border-radius: 5px;
 	font-size: 15px;
+	top: 1px;
+}
+#top input[type="submit"]:hover {
+	cursor: pointer;
 }
 .skinny {
 	font-weight: 100;
