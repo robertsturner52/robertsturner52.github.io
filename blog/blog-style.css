@@ -1,0 +1,96 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	color: #555;
+	margin-top: 20px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+p, h1, h2, h3 {
+	line-height: 1.2em;
+	padding: 10px 5px;
+}
+header {
+	width: 75%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.container {
+	width: 75%;
+	display: flex;
+}
+header nav ul {
+  width: 280px;
+  list-style: none;
+  padding-right: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+	text-decoration: none;
+}
+main, aside {
+	height: 350px;
+	color: white;
+}
+main {
+	position: relative;
+	flex: 3;
+	background-color: blue;
+	max-height: 350px;
+	overflow:auto;
+	padding-right: 0px;
+}
+article {
+	display: flex;
+	flex-direction: column;
+}
+p a.btn {
+	display: inline-block;
+	border: 2px solid #000;
+	border-radius: 10px;
+	height: 25px;
+	background: red;
+	color: white;
+	text-decoration: none;
+	padding: 8px 8px 0 8px;
+	margin-right: 10px;
+}
+p a {
+	color: white;
+}
+#share-buttons {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: yellow;
+	display: flex;
+	justify-content: space-between;
+}
+aside {
+	flex: 1;
+	background: red;
+}
+footer {
+	width: 75%;
+}
+footer ul {
+	display: flex;
+}
+footer ul a {
+	flex: 1;
+	text-decoration: none;
+	color: black;
+}
+footer ul a img{
+	height: 25px;
+}
+footer li {
+	list-style: none;
+	text-align: center;
+}

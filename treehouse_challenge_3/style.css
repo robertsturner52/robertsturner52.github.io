@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box
+}
+body {
+	font-family: sans-serif;
+	font-size: 14pt;
+	color: #444;
+}
+header {
+	height: 75px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 22px 0px 18px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.name {
+	width: 200px;
+	color: rgb(104, 234, 104);
+}
+h1 {
+	color: rgb(104, 234, 104);
+	font-size: 24pt;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+h2, h3, p {
+	margin: 10px 0px;
+}
+h2 {
+	font-size: 24pt;
+}
+h3 {
+	font-size: 18pt;
+}
+p {
+	font-size: 12pt;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+}
+ul li a {
+	padding: 10px 15px;
+	color: rgb(104, 234, 104);
+	display: block;
+	text-decoration: none;
+	color: #444;
+}
+ul li:hover a {
+	color: #fff;
+	background: rgb(104, 234, 104);
+	transition: background .5s ease-in-out .2s;
+}
+ul li:last-child a {
+	color: rgb(104, 234, 104);
+}
+ul li:last-child:hover a {
+	color: #fff;
+}
+ul li {
+	position: relative;
+}
+ul li ul {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	max-height: 0;
+	overflow: hidden;
+	z-index: 1;
+}
+ul li:hover ul {
+	max-width: 300px;
+	max-height: 900px;
+	overflow: visible;
+	transition: max-height 1s ease-in-out .5s;
+}
+ul li ul li:last-child a {
+	color: #fff;
+}
+.main {
+	background: rgb(111, 255, 111);
+	padding: 0;
+	display: flex;
+}
+section {
+	flex-basis: 70%;
+	max-width: 900px;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+.secintro {
+	max-width: 500px;
+	margin: 20px auto;
+}
+.secintro p {
+	font-size: 13pt;
+}
+.columns {
+	display: flex;
+	justify-content: space-between;
+}
+.col p {
+	font-size: 11pt;
+}
+.col {
+	flex-basis: 30%;
+}
+.col img {
+	height: 150px;
+	width: 150px;
+}
+#img1 {
+	background-color: #39add1;
+	border-radius: 50%;
+}
+#img2 {
+	background-color: #ffd466;
+	border-radius: 50%;
+}
+#img3 {
+	background-color: #ff8eb4;
+	border-radius: 50%;
+}
+aside {
+	flex-basis: 30%;
+	background: rgb(223, 255, 168);
+	padding: 20px;
+} 
+
+
+@media (max-width: 767px) {
+
+header, ul {
+	flex-direction: column;
+	align-items: center;
+}
+header {
+	height: 327px;
+	padding: 0;
+}
+h1, ul li {
+	text-align: center;
+}
+.name, ul li {
+	box-shadow:  2px 0 2px #cecece;
+}
+ul li {
+	height: 50px;
+}
+.name, nav, nav ul li {
+	width: 100%;
+}
+ul li a {
+	padding: 15px;
+}
+h1 {
+	padding-top: 22px;
+	padding-bottom: 22px;
+	margin: 0;
+}
+.main {
+	flex-wrap: wrap;
+}
+section {
+	flex-basis: 100%;
+}
+aside {
+	flex-basis: 100%;
+}

@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box
+}
+body {
+	font-family: sans-serif;
+	font-size: 14pt;
+	color: #444;
+}
+header {
+	height: 75px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 22px 0px 18px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.name {
+	width: 400px;
+	color: rgb(104, 234, 104);
+}
+h1 {
+	color: rgb(104, 234, 104);
+	font-size: 24pt;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+h2, h3, p {
+	margin: 10px 0px;
+}
+h2 {
+	font-size: 24pt;
+}
+h3 {
+	font-size: 18pt;
+}
+p {
+	font-size: 12pt;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+}
+ul li a {
+	padding: 10px 15px;
+	color: rgb(104, 234, 104);
+	display: block;
+	text-decoration: none;
+	color: #444;
+}
+ul li:hover a {
+	color: #fff;
+	background: rgb(104, 234, 104);
+	transition: background .5s ease-in-out .2s;
+}
+ul li:last-child a {
+	color: rgb(104, 234, 104);
+}
+ul li:last-child:hover a {
+	color: #fff;
+}
+ul li {
+	position: relative;
+}
+.main {
+	background: rgb(111, 255, 111);
+	padding: 0;
+	display: flex;
+}
+section {
+	flex: 1;
+	width: 100%;
+	display: block;
+	margin: 30px;
+	text-align: center;
+}
+.secintro {
+	max-width: 500px;
+	margin: 20px auto;
+}
+.secintro p {
+	font-size: 13pt;
+}
+.columns {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+article {
+	max-width: 300px;
+	flex-basis: 1;
+	padding-bottom: 20px;
+	position: relative;
+}
+article p {
+	font-size: 11pt;
+}
+article img {
+	width: 300px;
+}
+.show-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	max-height: 0;
+	overflow: hidden;
+}
+article a:hover .show-info{
+	max-height: 300px;
+	overflow: visible;
+	background: black;
+	color: white;
+/*	transition: max-height 1s ease-in-out .5s;*/
+}
+
+@media (max-width: 767px) {
+
+header, ul {
+	flex-direction: column;
+	align-items: center;
+}
+header {
+	height: 327px;
+	padding: 0;
+}
+h1, ul li {
+	text-align: center;
+}
+.name, ul li {
+	box-shadow:  2px 0 2px #cecece;
+}
+ul li {
+	height: 50px;
+}
+.name, nav, nav ul li {
+	width: 100%;
+}
+ul li a {
+	padding: 15px;
+}
+h1 {
+	padding-top: 22px;
+	padding-bottom: 22px;
+	margin: 0;
+}

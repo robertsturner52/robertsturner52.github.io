@@ -34,31 +34,31 @@ section {
 header {
 	background-color: #f8f8f8;
 }
-header h2 {
-	font-family: 'courier new', courier, sans-serif;
-	font-weight: 500;
-}
 #navcontainer {
-	height: 54px;
-	width: 970px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 	padding: 0 15px;
 	margin: 0 auto;
 }
 #navcontainer h2 {
-	display: inline-block;
-	padding-top: 16px;
-	margin-right: 100px;
+    font-family: 'courier new', courier, sans-serif;
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
-.navbar {
-	padding-top: 19px;
-	display: inline-block;
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap
+    justify-content: flex-around;
 }
 .navbar ul li {
-	display: inline;
-	padding: 19px 15px 12px 15px;
+	padding: 15px 15px 15px 15px;
+    border-bottom: 3px solid #f8f8f8;
 }
 .navbar a {
-	padding: 19px 0 12px 0;
+	padding: 19px 0 12px;
 	text-decoration: none;
 }
 .navbar li:nth-child(1) a {
@@ -226,7 +226,7 @@ footer p {
 	margin: 10px;
 }
 .explore ul li {
-	display: inline;
+	display: inline-block;
 	padding: 19px 2px 12px 2px;
 }
 .explore a {
@@ -276,4 +276,20 @@ footer p {
 	margin: 10px;
 	background-color: #2ec371;
 	text-decoration: none;
+}
+@media (max-width: 1024px) {
+	.container {
+		margin: 0 5%;
+		width: 90%;
+	}
+}
+@media (max-width: 768px) and (min-width: 481px) {
+    .one-half {
+        width: 98%;
+    }
+}
+@media (max-width: 480px) {
+    .one-half {
+        width: 98%;
+    }
 }
