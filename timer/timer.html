@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		button {
+			height: 100px;
+			font-size: 30pt;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<button id="startBtn">Press this button.</button>
+		<h1></h1>
+	</div>
+	<script>
+		var timerId = 0;
+		var myNode = document.querySelector('#startBtn');
+		var secondMessage = document.querySelector('h1');
+		secondMessage.innerHTML = "";
+		myNode.addEventListener('click', function() {
+			myNode.innerHTML = 'Self Destruct Engaged';
+//			setTimeout (function() {
+			var t=18;
+			setInterval (function() {
+				myNode.innerHTML = "You have "+t+" seconds left until self-destruction.";
+				t = t-1;
+				if (t == 16) {
+					secondMessage.style.fontSize = "24pt";
+					secondMessage.innerHTML = "You must press this button again before the time seconds is up to save yourself.";
+				}
+				else if (t == 14) {
+					secondMessage.innerHTML = "You must press the button to stop the ultimate destruction.";
+					secondMessage.style.fontSize = "30pt";
+				}
+				else if (t == 12) {
+					secondMessage.innerHTML = "Press the button now.";
+					secondMessage.style.fontSize = "34pt";
+				}
+				else if (t == 10) {
+					secondMessage.style.fontSize = "38pt";
+					secondMessage.innerHTML = "Press the button now!";
+				}
+				else if (t == 8) {
+					secondMessage.innerHTML = "You have less than ten seconds to avert destruction.";
+					secondMessage.style.fontSize = "42pt";
+				}
+				else if (t == 6) {
+					secondMessage.innerHTML = "Are you insane? Press the button!";
+					secondMessage.style.fontSize = "44pt";
+				}
+				else if (t == 4) {
+					secondMessage.innerHTML = "Save yourself!";
+					secondMessage.style.fontSize = "48pt";
+				}
+				else if (t == 2) {
+					secondMessage.style.fontSize = "52pt";
+					secondMessage.innerHTML = "Duck and Cover!";
+				}
+				else if (t == 0) {
+					secondMessage.innerHTML = "It's too late now!";
+					secondMessage.style.fontSize = "56pt";
+					var bodyNode = document.querySelector("body");
+					bodyNode.style.background = "url(\"giphy.gif\")";
+					bodyNode.backgroundSize = "cover";
+					myNode.style.display = "none";
+				}
+			}, 1000);
+		}, false);
+	</script>
+</body>
+</html>
