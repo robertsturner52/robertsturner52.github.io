@@ -16,15 +16,17 @@
 		<h1></h1>
 	</div>
 	<script>
-		var timerId = 0;
-		var myNode = document.querySelector('#startBtn');
-		var secondMessage = document.querySelector('h1');
-		secondMessage.innerHTML = "";
-		myNode.addEventListener('click', function() {
-			myNode.innerHTML = 'Self Destruct Engaged';
-//			setTimeout (function() {
-			var t=18;
-			setInterval (function() {
+	var timerId = 0;
+	var myNode = document.querySelector('#startBtn');
+	var secondMessage = document.querySelector('h1');
+	var myTime = 0;
+	var t = 18;
+	secondMessage.innerHTML = "";
+	myNode.addEventListener('click', function() {
+		myNode.innerHTML = 'Self Destruct Engaged';
+		t=18;
+		if (myTime === 0) {
+			myTime = setInterval (function() {
 				myNode.innerHTML = "You have "+t+" seconds left until self-destruction.";
 				t = t-1;
 				if (t == 16) {
@@ -65,10 +67,11 @@
 					var bodyNode = document.querySelector("body");
 					bodyNode.style.background = "url(\"giphy.gif\")";
 					bodyNode.backgroundSize = "cover";
-					myNode.style.display = "none";
+							myNode.style.display = "none";
 				}
 			}, 1000);
-		}, false);
+		}		
+	}, false);
 	</script>
 </body>
 </html>
